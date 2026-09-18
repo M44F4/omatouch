@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ideas and open-ended discussion
+    url: https://github.com/M44F4/omatouch/discussions
+    about: For anything that isn't a specific, actionable bug or feature request
+  - name: Omarchy itself, or another plugin
+    url: https://github.com/basecamp/omarchy/issues
+    about: Report problems with Omarchy or a different plugin over there, not here

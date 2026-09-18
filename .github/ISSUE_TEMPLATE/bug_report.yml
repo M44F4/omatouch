@@ -1,0 +1,54 @@
+name: Bug report
+description: Something in OmaTouch doesn't work correctly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. A couple of things first:
+
+        - Search existing issues before filing. A duplicate costs more time than it saves.
+        - This is for **OmaTouch** specifically, not Omarchy itself. If the problem is with Omarchy or another plugin, please report it there instead.
+        - Settings → Advanced → About → **Copy diagnostics** pastes version, style/language, and capability status straight into the box below. It never includes keystrokes, clipboard contents, or file contents.
+
+  - type: input
+    id: version
+    attributes:
+      label: OmaTouch version
+      description: Settings → Advanced → About, or the diagnostics paste below
+      placeholder: "1.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Paste the output of Settings → Advanced → About → Copy diagnostics
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: style-language
+    attributes:
+      label: Keyboard style and language
+      description: e.g. Omaplus, French
+    validations:
+      required: false
+
+  - type: textarea
+    id: capture
+    attributes:
+      label: Screenshot or screen recording
+      description: If the bug is visual, a capture is worth more than a description
+    validations:
+      required: false

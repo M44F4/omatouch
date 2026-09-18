@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest something OmaTouch doesn't do yet
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For open-ended ideas or discussion, [Discussions](../discussions) is often a better fit
+        than an issue. Use this form for a specific, concrete feature.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What you'd like to see
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What's the actual problem this would solve, or the workflow it would improve?
+    validations:
+      required: false
