@@ -5,18 +5,11 @@ AltGr levels, composes dead-key accents, and adds any language your system's
 own `xkb` data supports, with nothing installed on your system until you
 explicitly ask for it.
 
-<!--
-Screenshots are hosted as GitHub release assets, not committed to the repo:
-`omarchy plugin add` does a plain `git clone` (no --depth/--single-branch),
-which would download every image, on every branch, on every install.
-TODO once pushed: `gh release create screenshots --title Screenshots` (or
-attach to an issue), then swap these paths for the real asset URLs.
--->
-![Keyboard over a live theme, French AZERTY](screenshots/keyboard-english-omaplus.png)
-![Following the theme live, rounded corners](screenshots/keyboard-solitude-theme.png)
-![Mode tab: style, size, languages](screenshots/settings-mode-tab.png)
-![Appearance tab: opacity, radius, key color](screenshots/settings-appearance-tab.png)
-![Advanced tab: capability cards](screenshots/settings-advanced-gesture.png)
+![Keyboard over a live theme, French AZERTY](https://github.com/M44F4/omatouch/releases/download/v1.1.0/keyboard-english-omaplus.png)
+![Following the theme live, rounded corners](https://github.com/M44F4/omatouch/releases/download/v1.1.0/keyboard-solitude-theme.png)
+![Mode tab: style, size, languages](https://github.com/M44F4/omatouch/releases/download/v1.1.0/settings-mode-tab.png)
+![Appearance tab: opacity, radius, key color](https://github.com/M44F4/omatouch/releases/download/v1.1.0/settings-appearance-tab.png)
+![Advanced tab: capability cards](https://github.com/M44F4/omatouch/releases/download/v1.1.0/settings-advanced-gesture.png)
 
 ## Features
 

@@ -16,7 +16,5 @@ __pycache__/
 !/languages/compose.json
 !/languages/manifest.json
 
-# Never committed -- screenshots are hosted as GitHub release assets, not
-# repo content, so a plain `git clone` (what `omarchy plugin add` does,
-# no --depth/--single-branch) never downloads them on install.
+# Screenshots: hosted as release assets, not repo content.
 /screenshots/
