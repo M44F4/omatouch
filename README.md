@@ -53,18 +53,23 @@ rendering, the same as any other keyboard.
 
 ## Requirements
 
-Hard requirements (the keyboard won't type without these):
+`wtype` is the only hard requirement: it's the sole thing plain typing
+calls. Everything else below belongs to one specific feature, not to
+typing itself, and the bundled English keyboard works without any of
+them:
 
-- `wtype`: how every keystroke actually gets injected
-- `python3`: the language generator and status scripts
-- `xkbcli` / `libxkbcommon`: reads your system's keyboard layout data
-- `hyprctl`: first-run layout auto-detection
-- `wl-copy`: copying setup commands and the clipboard-history shortcut
+- `python3` + `xkbcli` / `libxkbcommon`: generating a new language.
+  If you never add one, neither is needed.
+- `hyprctl`: first-run layout auto-detection only. If it's missing or
+  fails, this falls back to English instead of breaking.
+- `wl-copy`: the clipboard-copy buttons for setup commands and the
+  clipboard-history shortcut, unrelated to typing.
 
-Optional, only if you opt into the related feature below:
+Optional, only if you opt into the feature below:
 
-- **Super Key Support:** `ydotool`, a dedicated `omatouch` group, and access
-  to `/dev/uinput`
+- **Super Key Support:** `ydotool` (also used at typing-time for
+  Super-key chords specifically, once set up), a dedicated `omatouch`
+  group, and access to `/dev/uinput`
 - **Three-Finger Gesture:** membership in the standard `input` group
 
 ## What it installs, and how to undo it
