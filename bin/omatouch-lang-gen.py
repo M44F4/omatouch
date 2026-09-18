@@ -474,7 +474,7 @@ def load_compose_for_generation(bundle_dir, state_dir):
 def read_manifest(languages_dir):
     """A corrupt manifest must never silently discard the user's language
     list, so rebuild it from what is actually on disk instead."""
-    manifest_path = languages_dir / "manifest.json"
+    manifest_path = languages_dir / "index.json"
     try:
         data = json.loads(manifest_path.read_text(encoding="utf-8"))
         if isinstance(data, dict) and isinstance(data.get("languages"), list):
@@ -499,7 +499,7 @@ def read_manifest(languages_dir):
 def rebuild_manifest_from_disk(languages_dir):
     entries = []
     for path in sorted(languages_dir.glob("*.json")):
-        if path.name in ("manifest.json", "compose.json"):
+        if path.name in ("index.json", "compose.json"):
             continue
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
@@ -511,7 +511,7 @@ def rebuild_manifest_from_disk(languages_dir):
 
 
 def write_manifest(languages_dir, manifest):
-    write_json(languages_dir / "manifest.json", manifest)
+    write_json(languages_dir / "index.json", manifest)
 
 
 def remove_language(languages_dir, lang_id):

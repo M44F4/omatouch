@@ -1046,7 +1046,7 @@ Panel {
 
   FileView {
     id: bundledManifestFile
-    path: root.languagesDir + "/manifest.json"
+    path: root.languagesDir + "/index.json"
     watchChanges: false
     printErrors: false
     onLoaded: {
@@ -1062,7 +1062,7 @@ Panel {
 
   FileView {
     id: stateManifestFile
-    path: root.stateLanguagesDir + "/manifest.json"
+    path: root.stateLanguagesDir + "/index.json"
     watchChanges: false
     printErrors: false
     onLoaded: {

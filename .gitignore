@@ -14,7 +14,7 @@ __pycache__/
 /languages/*.json
 !/languages/en-us.json
 !/languages/compose.json
-!/languages/manifest.json
+!/languages/index.json
 
 # Screenshots: hosted as release assets, not repo content.
 /screenshots/
