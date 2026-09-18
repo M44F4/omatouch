@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "M44F4.omatouch",
+  "name": "OmaTouch",
+  "version": "1.1.0",
+  "author": "M44F4",
+  "license": "MIT",
+  "description": "On-screen touch keyboard for tablet mode, invoked from the bar",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "OmaTouch",
+    "description": "On-screen touch keyboard for tablet mode, invoked from the bar",
+    "category": "Input",
+    "defaultSection": "right",
+    "allowMultiple": false
+  }
+}
