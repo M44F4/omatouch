@@ -17,7 +17,7 @@ actually fix it.
 
 Everything here is plain QML, JavaScript, Python, and bash. No build step.
 Edit files directly under
-`~/.config/omarchy/plugins/M44F4.omatouch/` and run
+`~/.config/omarchy/plugins/m44f4.omatouch/` and run
 
 ```bash
 omarchy restart shell

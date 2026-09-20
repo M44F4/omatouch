@@ -137,7 +137,7 @@ omarchy plugin add https://github.com/M44F4/omatouch --enable
 ```
 
 Or add it manually: clone into
-`~/.config/omarchy/plugins/M44F4.omatouch/` and enable it from Omarchy's
+`~/.config/omarchy/plugins/m44f4.omatouch/` and enable it from Omarchy's
 plugin manager. As with any third-party plugin, read the code before enabling
 it. Everything above is meant to make that easy, not to replace it.
 

@@ -9,8 +9,8 @@ import "Ydotool.js" as Ydotool
 
 Panel {
   id: root
-  moduleName: "M44F4.omatouch"
-  ipcTarget: "M44F4.omatouch"
+  moduleName: "m44f4.omatouch"
+  ipcTarget: "m44f4.omatouch"
 
   property bool shiftActive: false
   property bool capsActive: false
@@ -731,7 +731,7 @@ Panel {
     var tail = "/Panel.qml"
     if (path.length > tail.length && path.lastIndexOf(tail) === path.length - tail.length)
       return path.substring(0, path.length - tail.length)
-    return Quickshell.env("HOME") + "/.config/omarchy/plugins/M44F4.omatouch"
+    return Quickshell.env("HOME") + "/.config/omarchy/plugins/m44f4.omatouch"
   }
 
   property string appVersion: ""
@@ -750,7 +750,7 @@ Panel {
     }
   }
 
-  readonly property string updateCommand: "omarchy plugin update " + (root.appId.length > 0 ? root.appId : "M44F4.omatouch")
+  readonly property string updateCommand: "omarchy plugin update " + (root.appId.length > 0 ? root.appId : "m44f4.omatouch")
   property bool updateCommandJustCopied: false
   function copyUpdateCommand() {
     Util.execDetached("printf '%s' " + Util.shellQuote(root.updateCommand) + " | wl-copy")

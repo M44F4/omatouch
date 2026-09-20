@@ -163,7 +163,7 @@ def toggle_keyboard():
     env["XDG_RUNTIME_DIR"] = runtime_dir
     env["WAYLAND_DISPLAY"] = display
     subprocess.Popen(
-        ["quickshell", "-p", "/usr/share/omarchy/shell", "ipc", "call", "M44F4.omatouch", "toggle"],
+        ["quickshell", "-p", "/usr/share/omarchy/shell", "ipc", "call", "m44f4.omatouch", "toggle"],
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, env=env,
     )
 
