@@ -764,6 +764,20 @@ Panel {
     onTriggered: root.updateCommandJustCopied = false
   }
 
+  readonly property string repoUrl: "https://github.com/M44F4/omatouch"
+  property bool repoUrlJustCopied: false
+  function copyRepoUrl() {
+    Util.execDetached("printf '%s' " + Util.shellQuote(root.repoUrl) + " | wl-copy")
+    root.repoUrlJustCopied = true
+    repoUrlCopiedResetTimer.restart()
+  }
+
+  Timer {
+    id: repoUrlCopiedResetTimer
+    interval: 2200
+    onTriggered: root.repoUrlJustCopied = false
+  }
+
   property bool superPkg: false
   property bool superRule: false
   property bool superGroupMember: false
@@ -2526,6 +2540,23 @@ Panel {
               onCopyRequested: root.copyUpdateCommand()
             }
 
+            Text {
+              width: parent.width
+              textFormat: Text.PlainText
+              wrapMode: Text.WordWrap
+              text: "Enjoying OmaTouch? A star helps others find it:"
+              color: Color.foreground
+              opacity: 0.7
+              font.family: Style.font.menuFamily
+              font.pixelSize: Style.font.caption
+            }
+
+            CommandBlock {
+              command: root.repoUrl
+              justCopied: root.repoUrlJustCopied
+              onCopyRequested: root.copyRepoUrl()
+            }
+
             PanelSeparator { width: parent.width; foreground: Color.foreground }
 
             Button {
@@ -3257,6 +3288,24 @@ Panel {
             font.family: Style.font.menuFamily
             font.pixelSize: Style.font.caption
             lineHeight: 1.3
+          }
+
+          Text {
+            width: parent.width
+            textFormat: Text.PlainText
+            wrapMode: Text.WordWrap
+            text: "Like it? A star on GitHub helps:"
+            color: Color.foreground
+            opacity: 0.5
+            font.family: Style.font.menuFamily
+            font.pixelSize: Style.font.caption
+            lineHeight: 1.3
+          }
+
+          CommandBlock {
+            command: root.repoUrl
+            justCopied: root.repoUrlJustCopied
+            onCopyRequested: root.copyRepoUrl()
           }
 
           Row {

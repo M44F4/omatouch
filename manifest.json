@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "m44f4.omatouch",
   "name": "OmaTouch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "M44F4",
   "license": "MIT",
-  "description": "On-screen touch keyboard for tablet mode, invoked from the bar",
+  "description": "Resizable, theme-matching on-screen touch keyboard for tablet mode. Multiple layouts, Super key shortcuts, clipboard and key bindings straight from the screen, and multi-lingual support, invoked from the bar.",
   "kinds": [
     "bar-widget"
   ],
@@ -14,7 +14,7 @@
   },
   "barWidget": {
     "displayName": "OmaTouch",
-    "description": "On-screen touch keyboard for tablet mode, invoked from the bar",
+    "description": "Resizable, theme-matching on-screen touch keyboard for tablet mode. Multiple layouts, Super key shortcuts, clipboard and key bindings straight from the screen, and multi-lingual support, invoked from the bar.",
     "category": "Input",
     "defaultSection": "right",
     "allowMultiple": false
